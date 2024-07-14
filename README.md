@@ -1,4 +1,13 @@
-# foxglove-joystick
+# foxglove-joystick For Steam Deck
+
+## About
+This is a modified version of https://github.com/joshnewans/foxglove-joystick primarily for Steam Deck.
+
+Changes made:
+  - Added analog trigger support
+  - fixed D-Pad preview to use buttons instead of axis
+  - improved layout for steam deck controller preview
+
 
 This is an extension for [Foxglove Studio](https://github.com/foxglove/studio) that adds functionality for working with joysticks. It receives joystick data from a variety of inputs, and offers various ways to display it.
 
