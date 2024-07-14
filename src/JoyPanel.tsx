@@ -9,7 +9,7 @@ import {
 import { FormGroup, FormControlLabel, Switch } from "@mui/material";
 import { useEffect, useLayoutEffect, useState, useCallback, useRef } from "react";
 import ReactDOM from "react-dom";
-
+import React from "react";
 // import { GamepadDebug } from "./components/GamepadDebug";
 import { GamepadView } from "./components/GamepadView";
 import { SimpleButtonView } from "./components/SimpleButtonView";

@@ -6,7 +6,7 @@ import ipega9083s from "./display-mappings/ipega-9083s.json";
 import steamdeck from "./display-mappings/steamdeck.json";
 import xbox from "./display-mappings/xbox.json";
 import { Joy, ButtonConfig, BarConfig, StickConfig, DPadConfig, DisplayMapping } from "../types";
-
+import React from "react";
 const colStroke = "#ddd";
 const colPrim = "blue";
 const colSec = "cornflowerblue";
@@ -434,8 +434,8 @@ export function GamepadView(props: {
       const axisY = mapping.axisY;
       const x = mapping.x;
       const y = mapping.y;
-      const axXVal = joy?.axes[axisX] ?? 0;
-      const axYVal = joy?.axes[axisY] ?? 0;
+      const axXVal = ((joy?.buttons[14] ?? 0) - (joy?.buttons[15] ?? 0)) ?? 0;
+      const axYVal = ((joy?.buttons[12] ?? 0) - (joy?.buttons[13] ?? 0)) ?? 0;
       dispItems.push(generateDPad(axXVal, axYVal, x, y, 30));
     }
 

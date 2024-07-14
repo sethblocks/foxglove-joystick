@@ -1,3 +1,5 @@
+import React from "react";
+
 export function GamepadBackground(props: { layoutName: string }): React.ReactElement {
   if (props.layoutName === "steamdeck") {
     return (

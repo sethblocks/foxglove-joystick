@@ -1,4 +1,5 @@
 import { Button, LinearProgress } from "@mui/material";
+import React from "react";
 
 // TODO copy theming from another extension
 
