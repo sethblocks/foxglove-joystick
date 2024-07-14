@@ -160,15 +160,21 @@ function JoyPanel({ context }: { context: PanelExtensionContext }): JSX.Element 
           return;
         }
 
-        const tmpJoy = {
+        let tmpJoy = {
           header: {
             frame_id: config.publishFrameId,
             stamp: fromDate(new Date()), // TODO: /clock
           },
           axes: gp.axes.map((axis) => -axis),
           buttons: gp.buttons.map((button) => (button.pressed ? 1 : 0)),
-        } as Joy;
 
+        } as Joy;
+        if (gp.buttons[6]) {
+          tmpJoy.axes = tmpJoy.axes.concat([gp.buttons[6].value]);
+        }
+        if (gp.buttons[7]) {
+          tmpJoy.axes = tmpJoy.axes.concat([gp.buttons[7].value]);
+        }
         setJoy(tmpJoy);
       },
       [config.dataSource, config.gamepadId, config.publishFrameId],

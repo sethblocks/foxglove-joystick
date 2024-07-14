@@ -162,18 +162,7 @@ export function buildSettingsTree(config: Config, topics?: readonly Topic[]): Se
       ],
     },
 
-    // mapping: {
-    //   label: "Mapping",
-    //   input: "select",
-    //   value: config.mapping_name,
-    //   disabled: true, // config.displayMode === "auto",
-    //   options: [
-    //     {
-    //       label: "Custom",
-    //       value: "custom",
-    //     },
-    //   ],
-    // },
+    
     debugGamepad: {
       label: "Debug Gamepad",
       input: "boolean",
