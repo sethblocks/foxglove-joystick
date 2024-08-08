@@ -81,9 +81,9 @@ Currently consist of a `.json` to determine button locations and an entry in `Ga
   - [x] Source Mode 4 (Interactive)
 - **Display modes**
   - [x] Simple Auto-Generated Display
-    - [ ] Better identification of axes
+    - [x] Better identification of axes
   - [x] Gamepad visual mimic
-    - [ ] Different options for the image
+    - [x] Different options for the image
     - [ ] Different options for mapping joy buttons to image buttons
     - [x] Options for axes to be sticks, d-pads, triggers, or more
     - [ ] General improved customisability
