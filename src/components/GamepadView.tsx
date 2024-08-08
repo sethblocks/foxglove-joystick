@@ -397,7 +397,7 @@ export function GamepadView(props: {
       const x = mapping.x;
       const y = mapping.y;
       const rot = mapping.rot;
-      const axVal = joy?.axes[axis] ?? 0;
+      const axVal = (1 - 2*(joy?.axes[axis] ?? 1)) ?? 0;
       dispItems.push(generateBar(axVal, x, y, rot));
     } else if (mappingA.type === "stick") {
       const mapping = mappingA as StickConfig;
